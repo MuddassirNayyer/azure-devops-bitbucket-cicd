@@ -29,11 +29,9 @@
 ### Step 1.4: Copy this Remote access Repository Link
 ![](https://github.com/MuddassirNayyer/azure-devops-cicd/blob/master/Images/B%204.PNG)
 
-### To import this newly created or any other existing Bitbucket Repo to Azure DevOps, [Click Here](https://developercommunity.visualstudio.com/content/problem/348941/repository-sync-from-bitbucket.html)
+### 2: To import this newly created or any other existing Bitbucket Repo to Azure DevOps, [Click Here](https://developercommunity.visualstudio.com/content/problem/348941/repository-sync-from-bitbucket.html)
 
-### 2: Upload [yaml script](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/funcAppBuildPipeline.yaml), to the root directory of the repo, for build pipeline automation
-
-### 3: Create a Function App manually in Azure Subscription
+### 3: Upload [yaml script](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/funcAppBuildPipeline.yaml), to the root directory of the repo, for build pipeline automation
 
 ## 4: Create Function App in Azure - [Azure Portal](https://portal.azure.com/)
 
