@@ -29,7 +29,9 @@
 ### Step 1.4: Copy this Remote access Repository Link
 ![](https://github.com/MuddassirNayyer/azure-devops-cicd/blob/master/Images/B%204.PNG)
 
+### To import this newly created or any other existing Bitbucket Repo to Azure DevOps, [Click Here](https://developercommunity.visualstudio.com/content/problem/348941/repository-sync-from-bitbucket.html)
 
+### Upload [yaml script](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/funcAppBuildPipeline.yaml), to the root directory of the repo, for build pipeline automation
 
 ## Create a Function App manually in Azure Subscription
 
@@ -49,7 +51,7 @@
 
 
 
-## Azure CLI - Build Pipeline Automation Script for Azure Functions (.Net Core) 
+## Azure CLI - Build Pipeline Script (.Net Core) - [Azure Cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) - Run in Azure CLI
 
 
 ### Variables: Project Configuration
@@ -59,14 +61,15 @@ organization=https://dev.azure.com/exampleOrg/
 </code></pre>
 
 ### Variables: Build Pipeline Configuration
-<pre><code>
+#### Note: buildPip
+<pre><code> funcAppBuildPipeline.yaml place it at root of repository
 buildPipelineName=testBuildPipelineName
 buildPipelineDescription=testBuildPipelineDescription
 repositoryType=tfsgit # {github, tfsgit}
 repositoryCloneUri=https://github.com/ExampleUserName/testRepo.git
 repoBranch=master
 skipFirstRun=false # {true, false}
-yamlPipelinePath=/[funcAppBuildPipeline.yaml](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/funcAppBuildPipeline.yaml) # yaml script to generate build pipeline, place it at root of the repository
+yamlPipelinePath=/funcAppBuildPipeline.yaml # yaml script to generate build pipeline, place it at root of the repository
 </code></pre>
 
 ### DevOps Extension: Install if not already installed
