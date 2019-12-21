@@ -15,36 +15,36 @@
 
 ## Create a **private** git repo on Bitbucket.org with the following source code: https://github.com/vkhazin/azure-function-cli
 
-## 4: Create Bitbukcet Repository - [Bitbucket.org](https://bitbucket.org/)
+## 1: Create Bitbukcet Repository - [Bitbucket.org](https://bitbucket.org/)
 
-### Step 4.1: Click on '+' icon
+### Step 1.1: Click on '+' icon
 ![](https://github.com/MuddassirNayyer/azure-devops-cicd/blob/master/Images/B%201.PNG)
 
-### Step 4.2: Click on Repository
+### Step 1.2: Click on Repository
 ![](https://github.com/MuddassirNayyer/azure-devops-cicd/blob/master/Images/B%202.PNG)
 
-### Step 4.3: Enter required Reposioty Information and create Repo
+### Step 1.3: Enter required Reposioty Information and create Repo
 ![](https://github.com/MuddassirNayyer/azure-devops-cicd/blob/master/Images/B%203.PNG)
 
-### Step 4.4: Copy this Remote access Repository Link
+### Step 1.4: Copy this Remote access Repository Link
 ![](https://github.com/MuddassirNayyer/azure-devops-cicd/blob/master/Images/B%204.PNG)
 
 
 
 ## Create a Function App manually in Azure Subscription
 
-## 1: Create Function App in Azure - [Azure Portal](https://portal.azure.com/)
+## 2: Create Function App in Azure - [Azure Portal](https://portal.azure.com/)
 
-### Step 1.1: Create Function App in Azure Portal
+### Step 2.1: Create Function App in Azure Portal
 ![](https://github.com/MuddassirNayyer/azure-devops-cicd/blob/master/Images/AZ%201.PNG)
 
-### Step 1.2: Click on Add
+### Step 2.2: Click on Add
 ![](https://github.com/MuddassirNayyer/azure-devops-cicd/blob/master/Images/AZ%202.PNG)
 
-### Step 1.3: Add Basic Information
+### Step 2.3: Add Basic Information
 ![](https://github.com/MuddassirNayyer/azure-devops-cicd/blob/master/Images/AZ%203.PNG)
 
-### Step 1.4: Change Hosting and Select Service Plan
+### Step 2.4: Change Hosting and Select Service Plan
 ![](https://github.com/MuddassirNayyer/azure-devops-cicd/blob/master/Images/AZ%204.PNG)
 
 
@@ -59,6 +59,10 @@
 projectName=TestProjectFromCli
 organization=https://dev.azure.com/exampleOrg/
 
+</code></pre>
+
+<pre><code>
+
 # Variables: Build Pipeline Configuration
 buildPipelineName=testBuildPipelineName
 buildPipelineDescription=testBuildPipelineDescription
@@ -68,15 +72,29 @@ repoBranch=master
 skipFirstRun=false # {true, false}
 yamlPipelinePath=/[funcAppBuildPipeline.yaml](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/funcAppBuildPipeline.yaml) # yaml script to generate build pipeline, place it at root of the repository
 
+</code></pre>
+
+<pre><code>
+
 # DevOps Extension: Install if not already installed
 az extension add --name azure-devops
+
+</code></pre>
 
 # Connect with DevOps account
 az login
 
+</code></pre>
+
+<pre><code>
+
 # Set Default DevOps Organization
 az devops configure \
 	--defaults organization=$organization
+
+</code></pre>
+
+<pre><code>
 
 # Create build pipeline
 az pipelines create \
