@@ -56,8 +56,7 @@ organization=https://dev.azure.com/exampleOrg/
 </code></pre>
 
 ### Variables: Build Pipeline Configuration
-#### Note: buildPip
-<pre><code> funcAppBuildPipeline.yaml place it at root of repository
+<pre><code> 
 buildPipelineName=testBuildPipelineName
 buildPipelineDescription=testBuildPipelineDescription
 repositoryType=tfsgit # {github, tfsgit}
