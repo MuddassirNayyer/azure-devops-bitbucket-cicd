@@ -49,21 +49,16 @@
 
 
 
-## Azure Build Automation Script 
+## Azure CLI - Build Pipeline Automation Script for Azure Functions (.Net Core) 
 
 <pre><code>
-
-#!/bin/bash
-
 # Variables: Project Configuration
 projectName=TestProjectFromCli
 organization=https://dev.azure.com/exampleOrg/
-
 </code></pre>
 
+### Variables: Build Pipeline Configuration
 <pre><code>
-
-# Variables: Build Pipeline Configuration
 buildPipelineName=testBuildPipelineName
 buildPipelineDescription=testBuildPipelineDescription
 repositoryType=tfsgit # {github, tfsgit}
@@ -71,32 +66,29 @@ repositoryCloneUri=https://github.com/ExampleUserName/testRepo.git
 repoBranch=master
 skipFirstRun=false # {true, false}
 yamlPipelinePath=/[funcAppBuildPipeline.yaml](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/funcAppBuildPipeline.yaml) # yaml script to generate build pipeline, place it at root of the repository
-
 </code></pre>
 
+### DevOps Extension: Install if not already installed
 <pre><code>
-
-# DevOps Extension: Install if not already installed
 az extension add --name azure-devops
-
 </code></pre>
 
-# Connect with DevOps account
-az login
-
-</code></pre>
-
+### Connect with DevOps account
 <pre><code>
+az login
+</code></pre>
 
-# Set Default DevOps Organization
+
+### Set Default DevOps Organization
+<pre><code>
 az devops configure \
 	--defaults organization=$organization
 
 </code></pre>
 
-<pre><code>
 
-# Create build pipeline
+### Create build pipeline
+<pre><code>
 az pipelines create \
 	--name $buildPipelineName \
 	--description $buildPipelineName \
@@ -105,5 +97,4 @@ az pipelines create \
 	--project $projectName \
 	--org $organization \
 	--skip-first-run $skipFirstRun
-
 </code></pre>
