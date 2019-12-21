@@ -46,7 +46,7 @@
 
 
 
-## Azure CLI - Build Pipeline Script (.Net Core) - [Azure Cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) - Run in Azure CLI
+## 5: Azure CLI - [Build Pipeline Script (.Net Core)](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/pipelinesSetupCli.sh) - [Azure Cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) - Run in Azure CLI
 
 
 ### Variables: Project Configuration
