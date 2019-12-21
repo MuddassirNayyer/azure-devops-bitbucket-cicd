@@ -51,8 +51,9 @@
 
 ## Azure CLI - Build Pipeline Automation Script for Azure Functions (.Net Core) 
 
+
+### Variables: Project Configuration
 <pre><code>
-# Variables: Project Configuration
 projectName=TestProjectFromCli
 organization=https://dev.azure.com/exampleOrg/
 </code></pre>
