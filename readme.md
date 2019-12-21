@@ -41,11 +41,8 @@
 ### Step 4.2: Click on Add
 ![](https://github.com/MuddassirNayyer/azure-devops-cicd/blob/master/Images/AZ%202.PNG)
 
-### Step 4.3: Add Basic Information
+### Step 4.3: Add Basic Information and Click Create
 ![](https://github.com/MuddassirNayyer/azure-devops-cicd/blob/master/Images/AZ%203.PNG)
-
-### Step 4.4: Change Hosting and Select Service Plan
-![](https://github.com/MuddassirNayyer/azure-devops-cicd/blob/master/Images/AZ%204.PNG)
 
 
 
