@@ -96,3 +96,20 @@ az pipelines create \
 	--org $organization \
 	--skip-first-run $skipFirstRun
 </code></pre>
+
+## 6: Create Release Pipeline - [Azure DevOps](http://devops.azure.com/)
+
+### Step 6.1:
+![](https://github.com/MuddassirNayyer/azure-devops-cicd/blob/master/Images/d9.PNG)
+
+### Step 6.2: Select 'Deploy a function app to Azure Functions' template
+![](https://github.com/MuddassirNayyer/azure-devops-cicd/blob/master/Images/d10.PNG)
+
+### Step 6.3: Click on 'Add an Artifact'
+![](https://github.com/MuddassirNayyer/azure-devops-cicd/blob/master/Images/d11.PNG)
+
+### Step 6.4: Select the Project, build pipeline (created in previous step) and let other options default
+![](https://github.com/MuddassirNayyer/azure-devops-cicd/blob/master/Images/d12.PNG)
+
+### Step 6.5: Enable Continuous Deployment Trigger
+![](https://github.com/MuddassirNayyer/azure-devops-cicd/blob/master/Images/d13.PNG)
