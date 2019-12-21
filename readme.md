@@ -31,22 +31,22 @@
 
 ### To import this newly created or any other existing Bitbucket Repo to Azure DevOps, [Click Here](https://developercommunity.visualstudio.com/content/problem/348941/repository-sync-from-bitbucket.html)
 
-### Upload [yaml script](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/funcAppBuildPipeline.yaml), to the root directory of the repo, for build pipeline automation
+### 2: Upload [yaml script](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/funcAppBuildPipeline.yaml), to the root directory of the repo, for build pipeline automation
 
-## Create a Function App manually in Azure Subscription
+### 3: Create a Function App manually in Azure Subscription
 
-## 2: Create Function App in Azure - [Azure Portal](https://portal.azure.com/)
+## 4: Create Function App in Azure - [Azure Portal](https://portal.azure.com/)
 
-### Step 2.1: Create Function App in Azure Portal
+### Step 4.1: Create Function App in Azure Portal
 ![](https://github.com/MuddassirNayyer/azure-devops-cicd/blob/master/Images/AZ%201.PNG)
 
-### Step 2.2: Click on Add
+### Step 4.2: Click on Add
 ![](https://github.com/MuddassirNayyer/azure-devops-cicd/blob/master/Images/AZ%202.PNG)
 
-### Step 2.3: Add Basic Information
+### Step 4.3: Add Basic Information
 ![](https://github.com/MuddassirNayyer/azure-devops-cicd/blob/master/Images/AZ%203.PNG)
 
-### Step 2.4: Change Hosting and Select Service Plan
+### Step 4.4: Change Hosting and Select Service Plan
 ![](https://github.com/MuddassirNayyer/azure-devops-cicd/blob/master/Images/AZ%204.PNG)
 
 
