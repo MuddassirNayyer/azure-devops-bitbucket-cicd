@@ -13,15 +13,15 @@
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
-### 1: Create Bitbukcet Repository - [Bitbucket.org](https://bitbucket.org/) - [Steps](https://github.com/MuddassirNayyer/CreateBitbucketRepo) 
+#### 1: Create Bitbukcet Repository - [Bitbucket.org](https://bitbucket.org/) - [Steps](https://github.com/MuddassirNayyer/CreateBitbucketRepo) 
 
-### 2: To import a Bitbucket Repo to Azure DevOps, [Click Here](https://developercommunity.visualstudio.com/content/problem/348941/repository-sync-from-bitbucket.html)
+#### 2: To import a Bitbucket Repo to Azure DevOps, [Click Here](https://developercommunity.visualstudio.com/content/problem/348941/repository-sync-from-bitbucket.html)
 
-### 3: Upload [yaml script](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/funcApp.yaml), to the root directory of the repo, for a multi-stage ci/cd pipeline automation
+#### 3: Upload [yaml script](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/funcApp.yaml), to the root directory of the repo, for a multi-stage ci/cd pipeline automation
 
-### 4: Create Function App in Azure - [Azure Portal](https://portal.azure.com/) - [Steps](https://github.com/MuddassirNayyer/CreateAzureFunctionApp)
+#### 4: Create Function App in Azure - [Azure Portal](https://portal.azure.com/) - [Steps](https://github.com/MuddassirNayyer/CreateAzureFunctionApp)
 
-### 5: Azure CLI - [Build Pipeline Script (.Net Core)](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/pipelinesSetupCli.sh) - [Azure Cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) - Run in Azure CLI
+#### 5: Azure CLI - [Build Pipeline Script (.Net Core)](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/pipelinesSetupCli.sh) - [Azure Cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) - Run in Azure CLI
 
 #### Variables: Project Configuration
 <pre><code>
