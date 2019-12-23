@@ -13,12 +13,27 @@
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
-#### 1: Create Bitbukcet Repository - [Bitbucket.org](https://bitbucket.org/) - [Steps](https://github.com/MuddassirNayyer/CreateBitbucketRepo) 
+### Prerequisites:
 
-#### 2: To import a Bitbucket Repo to Azure DevOps, [Click Here](https://developercommunity.visualstudio.com/content/problem/348941/repository-sync-from-bitbucket.html)
+#### Function App in Azure - [Azure Portal](https://portal.azure.com/) - [Create New](https://github.com/MuddassirNayyer/CreateAzureFunctionApp)
 
-#### 3: Upload [yaml script](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/funcApp.yaml), to the root directory of the repo, for a multi-stage ci/cd pipeline automation
+#### Bitbukcet Repository - [Bitbucket.org](https://bitbucket.org/) - [Create New](https://github.com/MuddassirNayyer/CreateBitbucketRepo) 
 
-#### 4: Create Function App in Azure - [Azure Portal](https://portal.azure.com/) - [Steps](https://github.com/MuddassirNayyer/CreateAzureFunctionApp)
+-------------------------------------------------------------------------------------------------------------------------------------
 
-#### 5: Azure CLI - [Build Pipeline Script (.Net Core)](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/pipelinesSetupCli.sh) - [Azure Cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) - Run in Azure CLI
+### Steps with Azure CLI
+
+
+#### 1: Upload [yaml script](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/funcApp.yaml), to the root directory of the (Github or TfsGit) repo (used for pipeline automation) and Bitbucket Repo (actual repository), for a multi-stage ci/cd pipeline automation
+
+#### 2: Create Service Connection in Azure Devops Project - [Steps](https://github.com/MuddassirNayyer/CreateServiceConnection)
+
+#### 3: Azure CLI - [CLI Pipeline Script (.Net Core)](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/pipelinesSetupCli.sh) - [Azure Cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) - Run in Azure CLI
+
+#### 4: Change Repo to Bitbucket
+
+![](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/do1.PNG =200x200)
+
+![](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/do2.PNG =200x200)
+
+![](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/do3.PNG =200x200)
