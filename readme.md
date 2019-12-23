@@ -42,5 +42,37 @@
 
 <img src="https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/do3.PNG" alt="drawing" width="600"/>
 
-
 --------------------------------------------------------------------------------------------------------------------------------------
+
+
+### Steps with Azure DevOps GUI
+
+#### 1: Go to DevOps Project and Pieplines
+<img src="https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/do4.PNG" alt="drawing" width="600"/>
+
+#### 2: Select Bitbucket Cloud 
+<img src="https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/do5.PNG" alt="drawing" width="600"/>
+
+#### 3: Select the Bitbucket Repo
+<img src="https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/do6.PNG" alt="drawing" width="600"/>
+
+#### 4: Select the template
+<img src="https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/do7.PNG" alt="drawing" width="600"/>
+
+#### 5: Select the subscription
+<img src="https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/do8.PNG" alt="drawing" width="600"/>
+
+#### 6: Select the Azure Function App
+<img src="https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/do9.PNG" alt="drawing" width="600"/>
+
+#### 7: Add Task to run 'Unit Tests'
+<img src="https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/do10.PNG" alt="drawing" width="600"/>
+
+`
+- task: DotNetCoreCLI@2
+      displayName: 'Run Tests'
+      inputs:
+        command: test
+        projects: '**/*Tests/*.csproj'
+        arguments: '--configuration $(buildConfiguration)'
+`
