@@ -32,8 +32,8 @@
 
 #### 4: Change Repo to Bitbucket
 
-![](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/do1.PNG =200x200)
+![](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/do1.PNG ==250x)
 
-![](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/do2.PNG =200x200)
+![](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/do2.PNG ==250x)
 
-![](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/do3.PNG =200x200)
+![](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/do3.PNG ==250x)
