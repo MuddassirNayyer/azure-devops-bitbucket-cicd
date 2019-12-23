@@ -13,8 +13,6 @@
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
-## Create a **private** git repo on Bitbucket.org with the following source code: https://github.com/vkhazin/azure-function-cli
-
 ### 1: Create Bitbukcet Repository - [Bitbucket.org](https://bitbucket.org/) - [Steps](https://github.com/MuddassirNayyer/CreateBitbucketRepo) 
 
 ### 2: To import a Bitbucket Repo to Azure DevOps, [Click Here](https://developercommunity.visualstudio.com/content/problem/348941/repository-sync-from-bitbucket.html)
@@ -23,15 +21,15 @@
 
 ### 4: Create Function App in Azure - [Azure Portal](https://portal.azure.com/) - [Steps](https://github.com/MuddassirNayyer/CreateAzureFunctionApp)
 
-## 5: Azure CLI - [Build Pipeline Script (.Net Core)](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/pipelinesSetupCli.sh) - [Azure Cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) - Run in Azure CLI
+### 5: Azure CLI - [Build Pipeline Script (.Net Core)](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/pipelinesSetupCli.sh) - [Azure Cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) - Run in Azure CLI
 
-### Variables: Project Configuration
+#### Variables: Project Configuration
 <pre><code>
 projectName=TestProjectFromCli
 organization=https://dev.azure.com/exampleOrg/
 </code></pre>
 
-### Variables: Build Pipeline Configuration
+#### Variables: Build Pipeline Configuration
 <pre><code> 
 buildPipelineName=testBuildPipelineName
 buildPipelineDescription=testBuildPipelineDescription
@@ -42,18 +40,18 @@ skipFirstRun=false # {true, false}
 yamlPipelinePath=/funcAppBuildPipeline.yaml # yaml script to generate build pipeline, place it at root of the repository
 </code></pre>
 
-### DevOps Extension: Install if not already installed
+#### DevOps Extension: Install if not already installed
 <pre><code>
 az extension add --name azure-devops
 </code></pre>
 
-### Connect with DevOps account
+#### Connect with DevOps account
 <pre><code>
 az login
 </code></pre>
 
 
-### Set Default DevOps Organization
+#### Set Default DevOps Organization
 <pre><code>
 az devops configure \
 	--defaults organization=$organization
@@ -61,7 +59,7 @@ az devops configure \
 </code></pre>
 
 
-### Create build pipeline
+#### Create build pipeline
 <pre><code>
 az pipelines create \
 	--name $buildPipelineName \
