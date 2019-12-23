@@ -17,7 +17,7 @@
 
 ### 2: To import a Bitbucket Repo to Azure DevOps, [Click Here](https://developercommunity.visualstudio.com/content/problem/348941/repository-sync-from-bitbucket.html)
 
-### 3: Upload [yaml script](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/funcAppBuildPipeline.yaml), to the root directory of the repo, for a multi-stage ci/cd pipeline automation
+### 3: Upload [yaml script](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/funcApp.yaml), to the root directory of the repo, for a multi-stage ci/cd pipeline automation
 
 ### 4: Create Function App in Azure - [Azure Portal](https://portal.azure.com/) - [Steps](https://github.com/MuddassirNayyer/CreateAzureFunctionApp)
 
