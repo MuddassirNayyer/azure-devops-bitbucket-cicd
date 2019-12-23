@@ -21,7 +21,7 @@
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
-## Steps with Azure CLI
+## Method 1: Steps with Azure CLI
 
 
 #### 1: Upload [yaml script](https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/funcApp.yaml), to the root directory of the (Github or TfsGit) repo (used for pipeline automation) and Bitbucket Repo (actual repository), for a multi-stage ci/cd pipeline automation
@@ -45,7 +45,7 @@
 --------------------------------------------------------------------------------------------------------------------------------------
 
 
-## Steps with Azure DevOps GUI
+## Method 2: Steps with Azure DevOps GUI
 
 ### 1: Go to DevOps Project and Pieplines
 <img src="https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/do4.PNG" alt="drawing" width="450"/>
@@ -65,7 +65,7 @@
 ### 6: Select the Azure Function App
 <img src="https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/do9.PNG" alt="drawing" width="450"/>
 
-### 7: Add Task to run 'Unit Tests'
+### 7: Copy and paste this code inside azure-pipelines.yml file generated from template.
 <img src="https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/do10.PNG" alt="drawing" width="450"/>
 
 <pre><code>
