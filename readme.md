@@ -36,7 +36,7 @@
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-<img src="https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/do2.PNG" alt="drawing" width="400"/>
+<img src="https://github.com/MuddassirNayyer/azure-devops-bitbucket-cicd/blob/master/do2..PNG" alt="drawing" width="400"/>
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
